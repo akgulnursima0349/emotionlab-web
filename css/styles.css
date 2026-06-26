@@ -637,11 +637,8 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 }
 
 .scroll-demo-sticky {
-  position: sticky;
-  top: var(--navbar-height);
-  height: calc(100vh - var(--navbar-height));
-  display: flex;
-  align-items: center;
+  position: relative;
+  height: auto;
 }
 
 .scroll-demo-layout {
@@ -649,6 +646,7 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   align-items: center;
   gap: clamp(24px, 5vw, 64px);
   width: 100%;
+  padding: clamp(48px, 7vw, 88px) 0;
 }
 
 /* Text on left */
@@ -739,11 +737,60 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   border-radius: 50%;
   background: var(--color-border);
   transition: background var(--transition-fast), transform var(--transition-fast);
+  cursor: pointer;
 }
 
 .step-dot.is-active {
   background: var(--color-primary);
   transform: scale(1.3);
+}
+
+/* Prev / Next navigation buttons */
+.demo-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 24px;
+}
+
+.demo-prev,
+.demo-next {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-border);
+  background: var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  color: var(--color-text);
+  transition: border-color var(--transition-fast), color var(--transition-fast), background var(--transition-fast);
+}
+
+.demo-prev:hover:not(:disabled),
+.demo-next:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.demo-prev:disabled,
+.demo-next:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.demo-prev svg,
+.demo-next svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* On alt-bg sections the button background matches the section */
+.section--alt .demo-prev,
+.section--alt .demo-next {
+  background: white;
 }
 
 /* ── 9. TABLET MOCKUP SCREENS ───────────────────────────────────────────── */
@@ -2952,9 +2999,9 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   }
 
   .scroll-demo-layout {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 24px;
-    padding-top: 16px;
+    padding: 32px 0;
   }
 
   .scroll-demo-device {
@@ -2967,16 +3014,20 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
     text-align: center;
   }
 
+  .demo-nav {
+    justify-content: center;
+  }
+
   .device-frame--tablet {
-    width: min(480px, 90vw);
+    width: min(440px, 92vw);
   }
 
   .device-frame--phone {
-    width: min(240px, 60vw);
+    width: min(220px, 55vw);
   }
 
   .device-frame--browser {
-    width: min(560px, 92vw);
+    width: min(520px, 94vw);
   }
 
   .director-static {
@@ -3056,12 +3107,3 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 .section--alt { background: var(--color-bg-alt); }
 .section--dark { background: var(--color-dark); }
 
-/* Phone demo: device first in HTML, so default row puts device LEFT, text RIGHT */
-/* This alternates visually from the tablet section (text left, device right) */
-
-@media (max-width: 900px) {
-  /* Phone section: HTML order is [device, text], keep device on top */
-  #phone-demo .scroll-demo-layout {
-    flex-direction: column;
-  }
-}
