@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmotionLab — Duygusal Öğrenme Platformu</title>
+  <meta name="description" content="EmotionLab, özel eğitime ihtiyaç duyan çocuklar için tasarlanmış bir öğrenme ve duygusal farkındalık platformu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Ana navigasyon">
+  <div class="container navbar-inner">
+
+    <a href="#hero" class="navbar-logo" aria-label="EmotionLab ana sayfa">
+      <img src="images/logo.png" alt="EmotionLab" class="logo-img"
+           onerror="this.style.display='none';document.getElementById('navLogoFallback').style.display='flex'">
+      <span id="navLogoFallback" class="logo-text-fallback" aria-hidden="true">EmotionLab</span>
+    </a>
+
+    <ul class="navbar-links" role="list">
+      <li><a href="#tablet-demo">Uygulama</a></li>
+      <li><a href="#phone-demo">Veliler İçin</a></li>
+      <li><a href="#browser-demo">Okullar İçin</a></li>
+      <li><a href="#solutions">Çözümler</a></li>
+      <li><a href="#about">Hakkımızda</a></li>
+    </ul>
+
+    <a href="#footer-cta" class="btn btn-primary navbar-cta">Demo İste</a>
+
+    <button class="navbar-mobile-toggle" id="navToggle"
+            aria-label="Menüyü aç/kapat" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="navbar-mobile-menu" id="navMobileMenu" aria-hidden="true">
+    <ul role="list">
+      <li><a href="#tablet-demo" class="nav-mobile-link">Uygulama</a></li>
+      <li><a href="#phone-demo" class="nav-mobile-link">Veliler İçin</a></li>
+      <li><a href="#browser-demo" class="nav-mobile-link">Okullar İçin</a></li>
+      <li><a href="#solutions" class="nav-mobile-link">Çözümler</a></li>
+      <li><a href="#about" class="nav-mobile-link">Hakkımızda</a></li>
+      <li><a href="#footer-cta" class="btn btn-primary nav-mobile-cta">Demo İste</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 01 — HERO
+════════════════════════════════════════════════════════════════════════ -->
+<section class="section section--hero" id="hero">
+  <div class="container hero-inner">
+
+    <!-- Left: text -->
+    <div class="hero-text">
+      <span class="hero-eyebrow">Özel Eğitim Teknolojisi</span>
+      <h1 class="hero-title">
+        Çocuğunuzun duygusal dünyasını,<br>
+        <em>ekran süresini artırmadan</em> keşfedin
+      </h1>
+      <p class="hero-desc">
+        EmotionLab, özel eğitime ihtiyaç duyan çocuklar için tasarlanmış bir
+        öğrenme platformu. Oyunlaştırılmış aktivitelerle duygusal farkındalık,
+        odaklanma ve gerçek hayat becerileri kazandırır — mevcut ekran süresinin
+        içinde, ek bir yük olmadan.
+      </p>
+      <div class="hero-ctas">
+        <a href="#tablet-demo" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Demoyu Gör
+        </a>
+        <a href="#browser-demo" class="btn btn-secondary">Okullar İçin</a>
+      </div>
+    </div>
+
+    <!-- Right: static tablet preview -->
+    <div class="hero-device-wrapper" aria-hidden="true">
+      <div class="device-frame device-frame--tablet device-frame--hero">
+        <div class="device-btn device-btn--power"></div>
+        <div class="device-btn device-btn--vol-up"></div>
+        <div class="device-btn device-btn--vol-down"></div>
+        <div class="device-screen">
+          <!-- Static Ana Menü preview (matches Step 0 below) -->
+          <div class="screen-content is-active">
+            <div class="mock-app">
+              <div class="mock-topbar">
+                <div class="mock-profile">
+                  <div class="mock-avatar">A</div>
+                  <span class="mock-username">Ahmet</span>
+                </div>
+                <div class="mock-score">
+                  <img src="images/star.png" alt="">
+                  <span>120</span>
+                </div>
+              </div>
+              <div class="mock-section-title">Modüller</div>
+              <div class="mock-module-grid">
+                <div class="mock-module-card active">
+                  <div class="mock-module-icon amber">
+                    <img src="images/mutlu.png" alt="Duygu Adası">
+                  </div>
+                  <span>Duygu Adası</span>
+                </div>
+                <div class="mock-module-card locked">
+                  <div class="mock-module-icon gray">
+                    <img src="images/lock.png" alt="">
+                  </div>
+                  <span>Sosyal Köy</span>
+                </div>
+                <div class="mock-module-card locked">
+                  <div class="mock-module-icon gray">
+                    <img src="images/lock.png" alt="">
+                  </div>
+                  <span>Dikkat Bahçesi</span>
+                </div>
+                <div class="mock-module-card locked">
+                  <div class="mock-module-icon gray">
+                    <img src="images/lock.png" alt="">
+                  </div>
+                  <span>Nefes Meydanı</span>
+                </div>
+                <div class="mock-module-card locked">
+                  <div class="mock-module-icon gray">
+                    <img src="images/lock.png" alt="">
+                  </div>
+                  <span>Hayal Ormanı</span>
+                </div>
+                <div class="mock-module-card locked">
+                  <div class="mock-module-icon gray">
+                    <img src="images/lock.png" alt="">
+                  </div>
+                  <span>Beden Haritası</span>
+                </div>
+                <div class="mock-module-card locked">
+                  <div class="mock-module-icon gray">
+                    <img src="images/lock.png" alt="">
+                  </div>
+                  <span>Rutinler Şehri</span>
+                </div>
+                <div class="mock-module-card locked">
+                  <div class="mock-module-icon gray">
+                    <img src="images/lock.png" alt="">
+                  </div>
+                  <span>İletişim Köprüsü</span>
+                </div>
+                <div class="mock-module-card locked">
+                  <div class="mock-module-icon gray">
+                    <img src="images/lock.png" alt="">
+                  </div>
+                  <span>Duygu Deposu</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /hero-inner -->
+
+  <!-- Trust strip -->
+  <div class="trust-strip">
+    <div class="container trust-inner">
+      <div class="trust-badge">
+        <div class="trust-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <span>ETKİM / YTÜ Teknopark</span>
+      </div>
+      <div class="trust-badge">
+        <div class="trust-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <span>Türkçe Dil Desteği</span>
+      </div>
+      <div class="trust-badge">
+        <div class="trust-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <span>Otizm Dostu Tasarım</span>
+      </div>
+      <div class="trust-badge">
+        <div class="trust-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <span>Uzman Onaylı İçerik</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll cue -->
+  <div class="scroll-arrow" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </div>
+
+</section><!-- /#hero -->
+
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 02 — TABLET DEMO: ÇOCUK UYGULAMASI
+════════════════════════════════════════════════════════════════════════ -->
+<section class="section device-demo-section section--alt" id="tablet-demo">
+
+  <!-- Static intro -->
+  <div class="section-intro container">
+    <span class="section-label">01 — Çocuk Uygulaması</span>
+    <h2>Çocuğunuz Ne Görecek?</h2>
+    <p>EmotionLab'in çocuk uygulamasını birlikte keşfedelim. Duygusal farkındalıktan
+       günlük yaşam becerilerine, aşağı kaydırarak deneyimin farklı yönlerini görün.</p>
+  </div>
+
+  <!-- Scroll-driven area (height set by JS) -->
+  <div class="scroll-demo-area" id="tablet-scroll-area">
+    <div class="scroll-demo-sticky">
+      <div class="container">
+        <div class="scroll-demo-layout">
+
+          <!-- ── Left: text steps ── -->
+          <div class="scroll-demo-text" aria-live="polite">
+
+            <div class="text-step is-active" data-step="0">
+              <p class="text-step-label">Adım 1 / 6</p>
+              <h3>Basit ve Tanıdık Bir Başlangıç</h3>
+              <p>Çocuğunuz uygulamayı açtığında, tüm dünyayı bir kerede görmez.
+                 Şu an sadece Duygu Adası aktif — diğer alanlar yakında açılacak.
+                 Bu, bilgi yükünü azaltır ve odağı tek bir alana yönlendirir.</p>
+            </div>
+
+            <div class="text-step" data-step="1">
+              <p class="text-step-label">Adım 2 / 6</p>
+              <h3>Her Duygu, Kendi Dünyasında</h3>
+              <p>10 temel duygu, her biri kendine özgü bir renk ve karakterle
+                 temsil ediliyor. Çocuğunuz bir duyguyu seçtiğinde, o duygunun
+                 adasına girer ve oradaki aktivitelerle tanışır.</p>
+            </div>
+
+            <div class="text-step" data-step="2">
+              <p class="text-step-label">Adım 3 / 6</p>
+              <h3>Her Bölgede Birden Fazla Aktivite</h3>
+              <p>Her duygu bölgesinde oyunlar, hikâyeler ve etkileşimli aktiviteler
+                 bulunur. Platform büyüdükçe yeni aktiviteler eklenecek — deneyim
+                 çocuğunuzla birlikte gelişiyor.</p>
+            </div>
+
+            <div class="text-step" data-step="3">
+              <p class="text-step-label">Adım 4 / 6</p>
+              <h3>Öğrenirken Oynuyor, Oynarken Öğreniyor</h3>
+              <p>Her doğru cevap, nazik bir kutlamayla ödüllendirilir. Yanlış
+                 cevaplar asla cezalandırılmaz — sistem onun yerine ipucu vererek
+                 destek olur. Özel olarak üretilen karikatür yüzler, özel eğitim
+                 öğrencileri için sade ve sakinleştirici bir görsel dil kullanır.</p>
+            </div>
+
+            <div class="text-step" data-step="4">
+              <p class="text-step-label">Adım 5 / 6</p>
+              <h3>Sakinleşmeyi de Öğretiyoruz</h3>
+              <p>Bazı anlar, bir çocuğun kendini sakinleştirmesi gerekir. Nefes
+                 balonu egzersizi, basit ve tekrarlanabilir bir ritimle — içeri
+                 çek, tut, dışarı ver — çocuğun kendi kendine sakinleşmesine
+                 yardımcı olur. Hem bağımsız pratik için hem de öğretmen/veli
+                 rehberliğinde kullanılabilir.</p>
+            </div>
+
+            <div class="text-step" data-step="5">
+              <p class="text-step-label">Adım 6 / 6</p>
+              <h3>Sadece Duygular Değil, Gerçek Hayat Becerileri de</h3>
+              <p>EmotionLab sadece duygusal farkındalık değil; ayakkabı bağlama,
+                 diş fırçalama, giyinme gibi günlük yaşam becerilerini de adım
+                 adım, küçük parçalara bölerek öğretir. Her adım, çocuğun kendi
+                 hızında tamamlanabilecek şekilde tasarlanmıştır.</p>
+            </div>
+
+          </div><!-- /scroll-demo-text -->
+
+          <!-- ── Right: tablet device ── -->
+          <div class="scroll-demo-device">
+            <div class="device-frame device-frame--tablet" aria-hidden="true">
+              <div class="device-btn device-btn--power"></div>
+              <div class="device-btn device-btn--vol-up"></div>
+              <div class="device-btn device-btn--vol-down"></div>
+
+              <div class="device-screen">
+
+                <!-- STEP 0: Ana Menü -->
+                <div class="screen-content is-active" data-step="0">
+                  <div class="mock-app">
+                    <div class="mock-topbar">
+                      <div class="mock-profile">
+                        <div class="mock-avatar">A</div>
+                        <span class="mock-username">Ahmet</span>
+                      </div>
+                      <div class="mock-score">
+                        <img src="images/star.png" alt="">
+                        <span>120</span>
+                      </div>
+                    </div>
+                    <div class="mock-section-title">Modüller</div>
+                    <div class="mock-module-grid">
+                      <div class="mock-module-card active">
+                        <div class="mock-module-icon amber">
+                          <img src="images/mutlu.png" alt="">
+                        </div>
+                        <span>Duygu Adası</span>
+                      </div>
+                      <div class="mock-module-card locked">
+                        <div class="mock-module-icon gray"><img src="images/lock.png" alt=""></div>
+                        <span>Sosyal Köy</span>
+                      </div>
+                      <div class="mock-module-card locked">
+                        <div class="mock-module-icon gray"><img src="images/lock.png" alt=""></div>
+                        <span>Dikkat Bahçesi</span>
+                      </div>
+                      <div class="mock-module-card locked">
+                        <div class="mock-module-icon gray"><img src="images/lock.png" alt=""></div>
+                        <span>Nefes Meydanı</span>
+                      </div>
+                      <div class="mock-module-card locked">
+                        <div class="mock-module-icon gray"><img src="images/lock.png" alt=""></div>
+                        <span>Hayal Ormanı</span>
+                      </div>
+                      <div class="mock-module-card locked">
+                        <div class="mock-module-icon gray"><img src="images/lock.png" alt=""></div>
+                        <span>Beden Haritası</span>
+                      </div>
+                      <div class="mock-module-card locked">
+                        <div class="mock-module-icon gray"><img src="images/lock.png" alt=""></div>
+                        <span>Rutinler Şehri</span>
+                      </div>
+                      <div class="mock-module-card locked">
+                        <div class="mock-module-icon gray"><img src="images/lock.png" alt=""></div>
+                        <span>İletişim Köprüsü</span>
+                      </div>
+                      <div class="mock-module-card locked">
+                        <div class="mock-module-icon gray"><img src="images/lock.png" alt=""></div>
+                        <span>Duygu Deposu</span>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /step 0 -->
+
+                <!-- STEP 1: Duygu Adası Haritası -->
+                <div class="screen-content" data-step="1">
+                  <div class="mock-app">
+                    <div class="mock-header">
+                      <span class="mock-back">←</span>
+                      <div class="mock-header-title">
+                        <img src="images/mutlu.png" alt="">
+                        <span>Duygu Adası</span>
+                      </div>
+                    </div>
+                    <div class="mock-emotion-map-bg">
+                      <span class="mock-emotion-map-label">Hangi duyguyu keşfetmek istersin?</span>
+                      <div class="mock-emotion-grid">
+
+                        <div class="mock-emotion-zone active-zone zone-mutlu">
+                          <img src="images/mutlu.png" alt="" class="emotion-img">
+                          <span>Mutlu</span>
+                        </div>
+
+                        <div class="mock-emotion-zone active-zone zone-uzgun">
+                          <img src="images/uzgun.png" alt="" class="emotion-img">
+                          <span>Üzgün</span>
+                        </div>
+
+                        <div class="mock-emotion-zone locked-zone">
+                          <img src="images/kizgin.png" alt="" class="emotion-img">
+                          <span>Kızgın</span>
+                          <div class="lock-badge"><img src="images/lock.png" alt=""></div>
+                        </div>
+
+                        <div class="mock-emotion-zone locked-zone">
+                          <img src="images/korkmus.png" alt="" class="emotion-img">
+                          <span>Korkmış</span>
+                          <div class="lock-badge"><img src="images/lock.png" alt=""></div>
+                        </div>
+
+                        <div class="mock-emotion-zone locked-zone">
+                          <img src="images/gururlu.png" alt="" class="emotion-img">
+                          <span>Gururlu</span>
+                          <div class="lock-badge"><img src="images/lock.png" alt=""></div>
+                        </div>
+
+                        <div class="mock-emotion-zone locked-zone">
+                          <img src="images/heyecanli.png" alt="" class="emotion-img">
+                          <span>Heyecanlı</span>
+                          <div class="lock-badge"><img src="images/lock.png" alt=""></div>
+                        </div>
+
+                        <div class="mock-emotion-zone locked-zone">
+                          <img src="images/saskin.png" alt="" class="emotion-img">
+                          <span>Şaşkın</span>
+                          <div class="lock-badge"><img src="images/lock.png" alt=""></div>
+                        </div>
+
+                        <div class="mock-emotion-zone locked-zone">
+                          <img src="images/utanmis.png" alt="" class="emotion-img">
+                          <span>Utanmış</span>
+                          <div class="lock-badge"><img src="images/lock.png" alt=""></div>
+                        </div>
+
+                        <div class="mock-emotion-zone locked-zone">
+                          <img src="images/endiseli.png" alt="" class="emotion-img">
+                          <span>Endişeli</span>
+                          <div class="lock-badge"><img src="images/lock.png" alt=""></div>
+                        </div>
+
+                        <div class="mock-emotion-zone locked-zone">
+                          <img src="images/hayal_kirikligi.png" alt="" class="emotion-img">
+                          <span>Hayal Kırıklığı</span>
+                          <div class="lock-badge"><img src="images/lock.png" alt=""></div>
+                        </div>
+
+                      </div><!-- /emotion-grid -->
+                    </div>
+                  </div>
+                </div><!-- /step 1 -->
+
+                <!-- STEP 2: Mutlu Bölgesi -->
+                <div class="screen-content" data-step="2">
+                  <div class="mock-app">
+                    <div class="mock-header">
+                      <span class="mock-back">←</span>
+                      <div class="mock-header-title">
+                        <img src="images/mutlu.png" alt="">
+                        <span>Mutlu Bölgesi</span>
+                      </div>
+                    </div>
+                    <div class="mock-zone-body">
+                      <div class="mock-zone-row">
+                        <div class="mock-activity-card ac-active">
+                          <span class="mock-activity-emoji">🎮</span>
+                          <span class="mock-activity-label">Mutlu mu Üzgün mü?</span>
+                        </div>
+                        <div class="mock-activity-card ac-active">
+                          <span class="mock-activity-emoji">🌿</span>
+                          <span class="mock-activity-label">Sakinleşme Atölyesi</span>
+                        </div>
+                        <div class="mock-activity-card ac-locked">
+                          <span class="mock-activity-emoji">🔍</span>
+                          <span class="mock-activity-label">Duygu Dedektifi</span>
+                          <div class="lock-badge"><img src="images/lock.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="mock-zone-row">
+                        <div class="mock-activity-card ac-locked">
+                          <span class="mock-activity-emoji">📖</span>
+                          <span class="mock-activity-label">Hikaye Köşesi</span>
+                          <div class="lock-badge"><img src="images/lock.png" alt=""></div>
+                        </div>
+                        <div class="mock-activity-card ac-locked">
+                          <span class="mock-activity-emoji">🪞</span>
+                          <span class="mock-activity-label">Ayna</span>
+                          <div class="lock-badge"><img src="images/lock.png" alt=""></div>
+                        </div>
+                        <div class="mock-activity-card ac-locked" style="visibility:hidden;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /step 2 -->
+
+                <!-- STEP 3: Oyun Ekranı -->
+                <div class="screen-content" data-step="3">
+                  <div class="mock-app mock-game">
+                    <div class="mock-game-header">
+                      <div class="mock-progress-bar">
+                        <div class="mock-progress-fill" style="width: 40%"></div>
+                      </div>
+                      <div class="mock-game-score">
+                        <img src="images/star.png" alt="">
+                        <span>3</span>
+                      </div>
+                    </div>
+                    <div class="mock-game-question">Bu nasıl bir duygu?</div>
+                    <div class="mock-game-face">
+                      <img src="images/mutlu.png" alt="Mutlu yüz ifadesi">
+                    </div>
+                    <div class="mock-game-choices">
+                      <div class="mock-choice mock-choice--correct">
+                        <img src="images/mutlu.png" alt="Mutlu">
+                        <span>Mutlu</span>
+                        <div class="choice-indicator">
+                          <img src="images/checkmark.png" alt="Doğru">
+                        </div>
+                      </div>
+                      <div class="mock-choice">
+                        <img src="images/uzgun.png" alt="Üzgün">
+                        <span>Üzgün</span>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /step 3 -->
+
+                <!-- STEP 4: Sakinleşme Atölyesi -->
+                <div class="screen-content" data-step="4">
+                  <div class="mock-breathe-screen">
+                    <div class="mock-breathe-topbar">
+                      <span class="mock-breathe-topbar-back">←</span>
+                      <span class="mock-breathe-topbar-title">🌿 Sakinleşme Atölyesi</span>
+                    </div>
+                    <div class="mock-breathe-body">
+                      <div class="mock-breathe-instruction">İçeri çek…</div>
+                      <div class="mock-balloon-container">
+                        <img src="images/balon.png" alt="" class="mock-balloon-anim">
+                      </div>
+                      <div class="mock-breathe-count">4</div>
+                      <div class="mock-breathe-hint">Rahat bir pozisyonda otur • Burnundan nefes al</div>
+                    </div>
+                  </div>
+                </div><!-- /step 4 -->
+
+                <!-- STEP 5: Günlük Yaşam Becerileri — Ayakkabı Bağlama (5 sub-adım) -->
+                <div class="screen-content" data-step="5">
+                  <div class="mock-app">
+                    <div class="mock-topbar">
+                      <div class="mock-profile">
+                        <div class="mock-avatar">A</div>
+                        <span class="mock-username">Ahmet</span>
+                      </div>
+                      <div class="mock-score">
+                        <img src="images/star.png" alt="">
+                        <span>45</span>
+                      </div>
+                    </div>
+                    <div style="padding:6px 12px 0; flex-shrink:0;">
+                      <div class="mock-lifeskill-step-label">👟 Ayakkabı Bağlama — <span class="ls-step-num">Adım 1 / 5</span></div>
+                      <div class="mock-progress-bar" style="height:6px; margin-top:4px;">
+                        <div class="mock-progress-fill ls-progress" style="width:20%;background:#2F9E6E;"></div>
+                      </div>
+                    </div>
+                    <div class="mock-lifeskill-body">
+
+                      <div class="ls-substep is-active">
+                        <div class="mock-lifeskill-img-wrapper">
+                          <img src="images/bag_adim1.png" alt="Adım 1" class="mock-lifeskill-img">
+                        </div>
+                        <div class="mock-lifeskill-instruction">Bağcıkların iki ucunu tut</div>
+                      </div>
+
+                      <div class="ls-substep">
+                        <div class="mock-lifeskill-img-wrapper">
+                          <img src="images/bag_adim2.png" alt="Adım 2" class="mock-lifeskill-img">
+                        </div>
+                        <div class="mock-lifeskill-instruction">Bağcıkları çapraz geçir ve düğüm yap</div>
+                      </div>
+
+                      <div class="ls-substep">
+                        <div class="mock-lifeskill-img-wrapper">
+                          <img src="images/bag_adim3.png" alt="Adım 3" class="mock-lifeskill-img">
+                        </div>
+                        <div class="mock-lifeskill-instruction">Bir taraftan ilmik oluştur</div>
+                      </div>
+
+                      <div class="ls-substep">
+                        <div class="mock-lifeskill-img-wrapper">
+                          <img src="images/bag_adim4.png" alt="Adım 4" class="mock-lifeskill-img">
+                        </div>
+                        <div class="mock-lifeskill-instruction">Diğer bağcığı ilmiğin etrafına sar</div>
+                      </div>
+
+                      <div class="ls-substep">
+                        <div class="mock-lifeskill-img-wrapper">
+                          <img src="images/bag_adim5.png" alt="Adım 5" class="mock-lifeskill-img">
+                        </div>
+                        <div class="mock-lifeskill-instruction">İki ilmiği birlikte çek ve sık! 🎉</div>
+                      </div>
+
+                      <div class="ls-nav">
+                        <button class="ls-prev" disabled>← Geri</button>
+                        <button class="ls-next">Sıradaki Adım →</button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div><!-- /step 5 -->
+
+              </div><!-- /device-screen -->
+            </div><!-- /device-frame--tablet -->
+
+            <!-- Step dots (6 steps) -->
+            <div class="step-dots" aria-hidden="true">
+              <span class="step-dot is-active"></span>
+              <span class="step-dot"></span>
+              <span class="step-dot"></span>
+              <span class="step-dot"></span>
+              <span class="step-dot"></span>
+              <span class="step-dot"></span>
+            </div>
+
+          </div><!-- /scroll-demo-device -->
+        </div><!-- /scroll-demo-layout -->
+      </div><!-- /container -->
+    </div><!-- /scroll-demo-sticky -->
+  </div><!-- /scroll-demo-area #tablet-scroll-area -->
+
+  <!-- Section outro -->
+  <div class="section-outro container">
+    <a href="#phone-demo" class="section-transition-link">
+      Ebeveynler için de bir uygulamamız var
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+
+</section><!-- /#tablet-demo -->
+
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 03 — PHONE DEMO: VELİ UYGULAMASI
+════════════════════════════════════════════════════════════════════════ -->
+<section class="section device-demo-section" id="phone-demo">
+
+  <div class="section-intro container">
+    <span class="section-label">02 — Veli Uygulaması</span>
+    <h2>Siz de Her Adımı Takip Edin</h2>
+    <p>EmotionLab veli uygulaması, çocuğunuzun gelişimini günlük, haftalık ve
+       aylık olarak özetler; uzmanlarla görüşme talep etmenizi ve sorularınızı
+       sormanızı sağlar.</p>
+  </div>
+
+  <div class="scroll-demo-area" id="phone-scroll-area">
+    <div class="scroll-demo-sticky">
+      <div class="container">
+        <div class="scroll-demo-layout">
+
+          <!-- Phone device (will be on right due to row-reverse CSS) -->
+          <div class="scroll-demo-device">
+            <div class="device-frame device-frame--phone" aria-hidden="true">
+              <div class="device-btn device-btn--power"></div>
+              <div class="device-btn device-btn--vol-up"></div>
+              <div class="device-btn device-btn--vol-down"></div>
+
+              <div class="device-screen">
+
+                <!-- STEP 0: Dashboard -->
+                <div class="screen-content is-active" data-step="0">
+                  <div class="mock-phone">
+                    <div class="mock-status-bar">
+                      <span class="mock-status-time">09:41</span>
+                      <div class="mock-status-icons">
+                        <svg width="14" height="10" viewBox="0 0 14 10" fill="currentColor" aria-hidden="true"><rect x="0" y="4" width="2" height="6" rx="1"/><rect x="3" y="2.5" width="2" height="7.5" rx="1"/><rect x="6" y="1" width="2" height="9" rx="1"/><rect x="9" y="0" width="2" height="10" rx="1"/></svg>
+                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="0.75" y="0.75" width="12.5" height="8.5" rx="2"/><path d="M14 3.5v3a1.5 1.5 0 000-3z" fill="currentColor" stroke="none"/><rect x="2" y="2" width="8" height="6" rx="1" fill="currentColor" stroke="none"/></svg>
+                      </div>
+                    </div>
+                    <div class="mock-app-header">
+                      <h4>EmotionLab</h4>
+                      <div class="mock-app-avatar">V</div>
+                    </div>
+                    <div class="mock-phone-body">
+                      <div class="mock-card">
+                        <div class="mock-card-title">Bu Hafta Özeti</div>
+                        <div class="mock-week-stats">
+                          <div class="mock-stat">
+                            <div class="mock-stat-value">5</div>
+                            <div class="mock-stat-label">Aktivite tamamlandı</div>
+                          </div>
+                          <div class="mock-stat">
+                            <div class="mock-stat-value">12</div>
+                            <div class="mock-stat-label">Puan kazanıldı</div>
+                          </div>
+                          <div class="mock-stat">
+                            <div class="mock-stat-value">3</div>
+                            <div class="mock-stat-label">Modül aktif</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mock-card">
+                        <div class="mock-card-title">Güçlü Yönler</div>
+                        <div class="mock-strength-row">
+                          <span class="mock-strength-label">Duygu tanıma</span>
+                          <div class="mock-stars">
+                            <div class="mock-star filled"></div>
+                            <div class="mock-star filled"></div>
+                            <div class="mock-star filled"></div>
+                            <div class="mock-star filled"></div>
+                            <div class="mock-star empty"></div>
+                          </div>
+                        </div>
+                        <div class="mock-strength-row" style="margin-bottom:0">
+                          <span class="mock-strength-label">Dikkat süresi</span>
+                          <div class="mock-stars">
+                            <div class="mock-star filled"></div>
+                            <div class="mock-star filled"></div>
+                            <div class="mock-star filled"></div>
+                            <div class="mock-star empty"></div>
+                            <div class="mock-star empty"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mock-badge-alert">
+                        <span class="mock-badge-icon">🏆</span>
+                        <span class="mock-badge-text">Yeni rozet kazandı!<br>"İlk Oyun Tamamlandı"</span>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /step 0 -->
+
+                <!-- STEP 1: Analizler -->
+                <div class="screen-content" data-step="1">
+                  <div class="mock-phone">
+                    <div class="mock-status-bar">
+                      <span class="mock-status-time">09:41</span>
+                      <div class="mock-status-icons">
+                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="0.75" y="0.75" width="12.5" height="8.5" rx="2"/><path d="M14 3.5v3a1.5 1.5 0 000-3z" fill="currentColor" stroke="none"/><rect x="2" y="2" width="8" height="6" rx="1" fill="currentColor" stroke="none"/></svg>
+                      </div>
+                    </div>
+                    <div class="mock-app-header">
+                      <h4>Haftalık Analiz</h4>
+                      <div class="mock-app-avatar">V</div>
+                    </div>
+                    <div class="mock-phone-body">
+                      <div class="mock-card">
+                        <div class="mock-card-title">7 Günlük Aktivite</div>
+                        <div class="mock-chart-area">
+                          <svg viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true">
+                            <defs>
+                              <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#2B6CB0" stop-opacity="0.2"/>
+                                <stop offset="100%" stop-color="#2B6CB0" stop-opacity="0"/>
+                              </linearGradient>
+                            </defs>
+                            <!-- Area fill -->
+                            <path d="M0,50 L28,38 L57,20 L85,30 L114,10 L142,22 L171,14 L200,18 L200,60 L0,60 Z" fill="url(#chartGrad)"/>
+                            <!-- Line -->
+                            <polyline points="0,50 28,38 57,20 85,30 114,10 142,22 171,14 200,18"
+                                      fill="none" stroke="#2B6CB0" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+                            <!-- Dots -->
+                            <circle cx="114" cy="10" r="3.5" fill="#2B6CB0"/>
+                          </svg>
+                        </div>
+                        <div class="mock-days">
+                          <span class="mock-day">Pzt</span>
+                          <span class="mock-day">Sal</span>
+                          <span class="mock-day">Çar</span>
+                          <span class="mock-day">Per</span>
+                          <span class="mock-day">Cum</span>
+                          <span class="mock-day">Cmt</span>
+                          <span class="mock-day">Paz</span>
+                        </div>
+                      </div>
+                      <div class="mock-card">
+                        <div class="mock-card-title">Modül İlerlemesi</div>
+                        <div class="mock-module-bar-row">
+                          <span class="mock-module-bar-label">Duygu Adası</span>
+                          <div class="mock-bar-track"><div class="mock-bar-fill" style="width:75%"></div></div>
+                          <span class="mock-bar-pct">75%</span>
+                        </div>
+                        <div class="mock-module-bar-row">
+                          <span class="mock-module-bar-label">Dikkat Bahçesi</span>
+                          <div class="mock-bar-track"><div class="mock-bar-fill" style="width:32%;background:#2F9E6E"></div></div>
+                          <span class="mock-bar-pct">32%</span>
+                        </div>
+                        <div class="mock-module-bar-row" style="margin-bottom:0">
+                          <span class="mock-module-bar-label">Nefes Meydanı</span>
+                          <div class="mock-bar-track"><div class="mock-bar-fill" style="width:18%;background:#8B5CF6"></div></div>
+                          <span class="mock-bar-pct">18%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /step 1 -->
+
+                <!-- STEP 2: Görüşme Talep Et -->
+                <div class="screen-content" data-step="2">
+                  <div class="mock-phone">
+                    <div class="mock-status-bar">
+                      <span class="mock-status-time">09:41</span>
+                      <div class="mock-status-icons">
+                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="0.75" y="0.75" width="12.5" height="8.5" rx="2"/><path d="M14 3.5v3a1.5 1.5 0 000-3z" fill="currentColor" stroke="none"/><rect x="2" y="2" width="8" height="6" rx="1" fill="currentColor" stroke="none"/></svg>
+                      </div>
+                    </div>
+                    <div class="mock-app-header">
+                      <h4>Görüşme Talep Et</h4>
+                      <div class="mock-app-avatar">V</div>
+                    </div>
+                    <div class="mock-phone-body">
+                      <div class="mock-form-field">
+                        <div class="mock-field-label">Konu</div>
+                        <div class="mock-field-value">Duygu düzenleme güçlükleri</div>
+                      </div>
+                      <div class="mock-form-field">
+                        <div class="mock-field-label">Uzman Tipi</div>
+                        <div class="mock-field-value" style="color:#2B6CB0">✓ Özel Eğitim Öğretmeni</div>
+                      </div>
+                      <div class="mock-form-field">
+                        <div class="mock-field-label">Tarih Tercihi</div>
+                        <div class="mock-field-value">Hafta içi, öğleden sonra</div>
+                      </div>
+                      <div class="mock-form-field">
+                        <div class="mock-field-label">Görüşme Şekli</div>
+                        <div class="mock-field-value">Online (video)</div>
+                      </div>
+                      <div class="mock-submit-btn">Talep Gönder</div>
+                      <p style="font-size:9px;color:#8A9BAD;text-align:center;margin-top:8px;line-height:1.5;">
+                        Talebiniz öğretmeninize iletilecek. En kısa sürede dönüş yapılacaktır.
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /step 2 -->
+
+                <!-- STEP 3: Yapay Zekaya Sor -->
+                <div class="screen-content" data-step="3">
+                  <div class="mock-phone">
+                    <div class="mock-status-bar">
+                      <span class="mock-status-time">09:41</span>
+                      <div class="mock-status-icons">
+                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="0.75" y="0.75" width="12.5" height="8.5" rx="2"/><path d="M14 3.5v3a1.5 1.5 0 000-3z" fill="currentColor" stroke="none"/><rect x="2" y="2" width="8" height="6" rx="1" fill="currentColor" stroke="none"/></svg>
+                      </div>
+                    </div>
+                    <div class="mock-app-header">
+                      <h4>Yapay Zeka Asistanı</h4>
+                    </div>
+                    <div class="mock-chat-body">
+                      <div class="mock-chat-bubble user">
+                        Bu hafta neden daha az aktif?
+                      </div>
+                      <div class="mock-chat-bubble ai">
+                        Bu hafta 3 aktivite tamamlandı (geçen haftaki 5'e kıyasla).
+                        Salı ve Çarşamba günleri aktivite görünmüyor. Düzenli bir
+                        günlük rutin oluşturmanın yardımcı olabileceğini düşünüyorum.
+                      </div>
+                      <div class="mock-chat-bubble user">
+                        Hangi aktiviteler daha fazla ilgisini çekiyor?
+                      </div>
+                      <div class="mock-chat-bubble ai">
+                        Gözlemlenen verilere göre "Mutlu mu Üzgün mü?" oyunu en
+                        uzun süre ve en düzenli oynanan aktivite. Görsel tercihleri
+                        güçlü görünüyor.
+                      </div>
+                    </div>
+                    <div class="mock-ai-disclaimer">
+                      <span class="mock-ai-disclaimer-icon">ℹ️</span>
+                      <span class="mock-ai-disclaimer-text">
+                        Bu asistan gözlemlenen verilere dayanarak öneriler sunar.
+                        <strong>Tanı niteliği taşımaz ve uzman görüşünün yerini tutmaz.</strong>
+                      </span>
+                    </div>
+                    <div class="mock-chat-input">
+                      <div class="mock-chat-input-field">Bir şey sorun…</div>
+                      <div class="mock-chat-send">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /step 3 -->
+
+              </div><!-- /device-screen -->
+            </div><!-- /device-frame--phone -->
+
+            <div class="step-dots" aria-hidden="true">
+              <span class="step-dot is-active"></span>
+              <span class="step-dot"></span>
+              <span class="step-dot"></span>
+              <span class="step-dot"></span>
+            </div>
+
+          </div><!-- /scroll-demo-device -->
+
+          <!-- Text (on left, visually right side due to row-reverse) -->
+          <div class="scroll-demo-text" aria-live="polite">
+
+            <div class="text-step is-active" data-step="0">
+              <p class="text-step-label">Adım 1 / 4</p>
+              <h3>Günlük Özet, Tek Bakışta</h3>
+              <p>Her gün uygulamayı açtığınızda, çocuğunuzun o haftaki ilerlemesini
+                 basit ve anlaşılır bir dille görürsünüz — teknik terimler değil,
+                 gerçek gözlemler.</p>
+            </div>
+
+            <div class="text-step" data-step="1">
+              <p class="text-step-label">Adım 2 / 4</p>
+              <h3>Veriye Dayalı, Ama İnsan Diliyle</h3>
+              <p>Grafikler ve sayılar arka planda çalışır; siz sadece "bu hafta
+                 ne öğrendi, ne ilerledi" sorusuna net bir cevap görürsünüz.</p>
+            </div>
+
+            <div class="text-step" data-step="2">
+              <p class="text-step-label">Adım 3 / 4</p>
+              <h3>Uzmanla Konuşmak Bir Tık Kadar Yakın</h3>
+              <p>Özel eğitim öğretmeni, psikolog veya dil terapisti ile online
+                 görüşme talep edebilirsiniz — okulunuz size en kısa sürede
+                 dönüş yapar.</p>
+            </div>
+
+            <div class="text-step" data-step="3">
+              <p class="text-step-label">Adım 4 / 4</p>
+              <h3>Aklınıza Gelen Her Soru İçin</h3>
+              <p>Yapay zeka asistanımız, gözlemlenen verilere dayanarak size
+                 öneriler sunar. Ama unutmayın — bu bir <strong>tanı aracı değil,
+                 bir destek aracıdır</strong>. Emin olunamayan durumlarda sizi
+                 her zaman bir uzmana yönlendirir.</p>
+            </div>
+
+          </div><!-- /scroll-demo-text -->
+        </div><!-- /scroll-demo-layout -->
+      </div><!-- /container -->
+    </div><!-- /scroll-demo-sticky -->
+  </div><!-- /scroll-demo-area -->
+
+  <div class="section-outro container">
+    <a href="#browser-demo" class="section-transition-link">
+      Okullar ve öğretmenler için de bir panelimiz var
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+
+</section><!-- /#phone-demo -->
+
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 04 — BROWSER DEMO: KURUMSAL (ÖĞRETMEN + MÜDÜR)
+════════════════════════════════════════════════════════════════════════ -->
+<section class="section device-demo-section section--alt" id="browser-demo">
+
+  <div class="section-intro container">
+    <span class="section-label">03 — Kurumsal Panel</span>
+    <h2>Okullar ve Öğretmenler İçin</h2>
+    <p>EmotionLab, sadece çocuklar ve aileler için değil; öğretmenler ve okul
+       yöneticileri için de tasarlandı.</p>
+  </div>
+
+  <!-- ── ÖĞRETMEN PANELİ ── -->
+  <div class="container">
+    <div class="role-separator">
+      <div class="role-badge role-badge--teacher">
+        <div class="role-badge-dot"></div>
+        Öğretmen Paneli
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-demo-area" id="teacher-scroll-area">
+    <div class="scroll-demo-sticky">
+      <div class="container">
+        <div class="scroll-demo-layout">
+
+          <!-- Left: text -->
+          <div class="scroll-demo-text" aria-live="polite">
+
+            <div class="text-step is-active" data-step="0">
+              <p class="text-step-label">Öğretmen — 1 / 3</p>
+              <h3>Sınıfınızın Nabzını Tutun</h3>
+              <p>Hangi öğrenci hangi modülde ne kadar aktif, kim bir görüşme
+                 talebinde bulunmuş — hepsi tek ekranda. Sınıfınızın genel
+                 tablosunu saniyeler içinde kavrayın.</p>
+            </div>
+
+            <div class="text-step" data-step="1">
+              <p class="text-step-label">Öğretmen — 2 / 3</p>
+              <h3>Dönem Sonu Raporları Artık Otomatik</h3>
+              <p>Her öğrencinin BEP hedeflerine göre dönem başından şimdiye
+                 kadarki ilerlemesi otomatik hesaplanır ve görselleştirilir —
+                 raporlama için harcanan saatler azalır.</p>
+            </div>
+
+            <div class="text-step" data-step="2">
+              <p class="text-step-label">Öğretmen — 3 / 3</p>
+              <h3>BEP Hazırlama Sürecini Hızlandırın</h3>
+              <p>Yapay zeka, öğrencinin geçmiş performans verilerine bakarak
+                 somut, ölçülebilir BEP hedef taslakları önerir. Bu, öğretmenin
+                 sıfırdan başlamak zorunda kalmadan, veriye dayalı bir başlangıç
+                 noktasına sahip olmasını sağlar — ama <strong>son karar her
+                 zaman öğretmene aittir</strong>.</p>
+            </div>
+
+          </div>
+
+          <!-- Right: browser device -->
+          <div class="scroll-demo-device">
+            <div class="device-frame device-frame--browser" aria-hidden="true">
+              <div class="browser-bar">
+                <div class="browser-dots">
+                  <div class="browser-dot browser-dot--red"></div>
+                  <div class="browser-dot browser-dot--yellow"></div>
+                  <div class="browser-dot browser-dot--green"></div>
+                </div>
+                <div class="browser-url">app.emotionlab.net/ogretmen/sinif-genel</div>
+              </div>
+
+              <div class="device-screen">
+
+                <!-- STEP 0: Sınıf Genel Bakış -->
+                <div class="screen-content is-active" data-step="0">
+                  <div class="mock-browser-layout">
+                    <div class="mock-sidebar">
+                      <div class="mock-sidebar-logo">📊</div>
+                      <div class="mock-sidebar-icon active">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                      </div>
+                      <div class="mock-sidebar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                      </div>
+                      <div class="mock-sidebar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                      </div>
+                      <div class="mock-sidebar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                      </div>
+                    </div>
+                    <div class="mock-browser-main">
+                      <div class="mock-browser-topbar">
+                        <h4>Sınıf Genel Bakış</h4>
+                        <div class="mock-browser-user">
+                          <div class="mock-browser-avatar">A</div>
+                          Ayşe Öğretmen
+                        </div>
+                      </div>
+                      <div class="mock-browser-content">
+                        <div class="mock-stats-row">
+                          <div class="mock-stat-card">
+                            <div class="mock-stat-card-value">18</div>
+                            <div class="mock-stat-card-label">Toplam öğrenci</div>
+                          </div>
+                          <div class="mock-stat-card highlight">
+                            <div class="mock-stat-card-value">12</div>
+                            <div class="mock-stat-card-label">Bu hafta aktif</div>
+                          </div>
+                          <div class="mock-stat-card">
+                            <div class="mock-stat-card-value">3</div>
+                            <div class="mock-stat-card-label">Görüşme talebi</div>
+                          </div>
+                          <div class="mock-stat-card">
+                            <div class="mock-stat-card-value">%78</div>
+                            <div class="mock-stat-card-label">Ort. ilerleme</div>
+                          </div>
+                        </div>
+                        <div class="mock-student-list">
+                          <div class="mock-student-list-header">
+                            <span class="mock-student-list-title">Öğrenci Listesi</span>
+                          </div>
+                          <div class="mock-student-row">
+                            <div class="mock-student-avatar">AK</div>
+                            <span class="mock-student-name">Ahmet K.</span>
+                            <span class="mock-student-module">Duygu Adası</span>
+                            <span class="mock-status-badge active">Aktif</span>
+                          </div>
+                          <div class="mock-student-row">
+                            <div class="mock-student-avatar" style="background:#2F9E6E">ZA</div>
+                            <span class="mock-student-name">Zeynep A.</span>
+                            <span class="mock-student-module">Nefes Meydanı</span>
+                            <span class="mock-status-badge active">Aktif</span>
+                          </div>
+                          <div class="mock-student-row">
+                            <div class="mock-student-avatar" style="background:#8B5CF6">MT</div>
+                            <span class="mock-student-name">Mert T.</span>
+                            <span class="mock-student-module">—</span>
+                            <span class="mock-status-badge absent">Bu hafta yok</span>
+                          </div>
+                          <div class="mock-student-row">
+                            <div class="mock-student-avatar" style="background:#F97316">CY</div>
+                            <span class="mock-student-name">Can Y.</span>
+                            <span class="mock-student-module">Dikkat Bahçesi</span>
+                            <span class="mock-status-badge warning">Talep var</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /step 0 -->
+
+                <!-- STEP 1: BEP Dönem Değerlendirmesi -->
+                <div class="screen-content" data-step="1">
+                  <div class="mock-browser-layout">
+                    <div class="mock-sidebar">
+                      <div class="mock-sidebar-logo">📊</div>
+                      <div class="mock-sidebar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                      </div>
+                      <div class="mock-sidebar-icon active">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                      </div>
+                      <div class="mock-sidebar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                      </div>
+                      <div class="mock-sidebar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                      </div>
+                    </div>
+                    <div class="mock-browser-main">
+                      <div class="mock-bep-header">
+                        <span class="mock-bep-back">←</span>
+                        <span class="mock-bep-title">Ahmet K. — BEP Dönem Değerlendirmesi</span>
+                      </div>
+                      <div class="mock-bep-goals">
+                        <div class="mock-goal-row">
+                          <div class="mock-goal-title">Duygu Tanımlama</div>
+                          <div class="mock-goal-bars">
+                            <div class="mock-goal-bar-row">
+                              <span class="mock-goal-bar-label">Dönem başı</span>
+                              <div class="mock-goal-track"><div class="mock-goal-fill before" style="width:20%"></div></div>
+                              <span class="mock-goal-pct">20%</span>
+                            </div>
+                            <div class="mock-goal-bar-row">
+                              <span class="mock-goal-bar-label">Şu an</span>
+                              <div class="mock-goal-track"><div class="mock-goal-fill after" style="width:75%"></div></div>
+                              <span class="mock-goal-pct after">75%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mock-goal-row">
+                          <div class="mock-goal-title">Dikkat Süresi (5 dk. hedef)</div>
+                          <div class="mock-goal-bars">
+                            <div class="mock-goal-bar-row">
+                              <span class="mock-goal-bar-label">Dönem başı</span>
+                              <div class="mock-goal-track"><div class="mock-goal-fill before" style="width:15%"></div></div>
+                              <span class="mock-goal-pct">15%</span>
+                            </div>
+                            <div class="mock-goal-bar-row">
+                              <span class="mock-goal-bar-label">Şu an</span>
+                              <div class="mock-goal-track"><div class="mock-goal-fill after" style="width:55%"></div></div>
+                              <span class="mock-goal-pct after">55%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mock-goal-row">
+                          <div class="mock-goal-title">Sosyal Etkileşim Başlatma</div>
+                          <div class="mock-goal-bars">
+                            <div class="mock-goal-bar-row">
+                              <span class="mock-goal-bar-label">Dönem başı</span>
+                              <div class="mock-goal-track"><div class="mock-goal-fill before" style="width:10%"></div></div>
+                              <span class="mock-goal-pct">10%</span>
+                            </div>
+                            <div class="mock-goal-bar-row">
+                              <span class="mock-goal-bar-label">Şu an</span>
+                              <div class="mock-goal-track"><div class="mock-goal-fill after" style="width:40%"></div></div>
+                              <span class="mock-goal-pct after">40%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mock-ai-note">
+                          <span class="mock-ai-note-icon">ℹ️</span>
+                          <span class="mock-ai-note-text">
+                            Bu analiz platform içi gözlemlenen verilere dayanır.
+                            <strong>Klinik değerlendirmenin yerini tutmaz.</strong>
+                            BEP hedefleri yalnızca yetkili uzmanlar tarafından güncellenmelidir.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /step 1 -->
+
+                <!-- STEP 2: YZ'den BEP Planı İste -->
+                <div class="screen-content" data-step="2">
+                  <div class="mock-browser-layout">
+                    <div class="mock-sidebar">
+                      <div class="mock-sidebar-logo">📊</div>
+                      <div class="mock-sidebar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                      </div>
+                      <div class="mock-sidebar-icon active">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                      </div>
+                      <div class="mock-sidebar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                      </div>
+                    </div>
+                    <div class="mock-browser-main">
+                      <div class="mock-bep-header">
+                        <span class="mock-bep-back">←</span>
+                        <span class="mock-bep-title">Ayşe Yılmaz için BEP Planı Oluştur</span>
+                      </div>
+                      <div class="mock-browser-content">
+                        <div class="mock-bep-request-section">
+                          <div class="mock-bep-request-form">
+                            <div class="mock-goal-title" style="margin-bottom:5px;">Hangi alan için hedef belirlemek istersiniz?</div>
+                            <div class="mock-bep-chips">
+                              <span class="mock-bep-chip selected">Duygu Tanıma</span>
+                              <span class="mock-bep-chip">Sosyal Beceriler</span>
+                              <span class="mock-bep-chip">Günlük Yaşam</span>
+                              <span class="mock-bep-chip">İletişim</span>
+                            </div>
+                            <div class="mock-generate-btn">
+                              <span class="mock-ai-badge">✦ YZ</span>
+                              Plan Oluştur
+                            </div>
+                          </div>
+
+                          <div class="mock-bep-output">
+                            <div class="mock-bep-output-header">
+                              <span class="mock-bep-output-title">Önerilen BEP Hedefi — Duygu Tanıma</span>
+                              <span class="mock-ai-badge">✦ YZ</span>
+                            </div>
+                            <div class="mock-bep-row">
+                              <strong>Kısa Vadeli Hedef:</strong> Ayşe, 4 hafta içinde temel 4 duyguyu görsel destekle yüksek doğrulukla tanımlayabilecektir.
+                            </div>
+                            <div class="mock-bep-row">
+                              <strong>Yöntem:</strong> ABA fading tekniği — görsel ipucu kademeli olarak azaltılır.
+                            </div>
+                            <div class="mock-bep-row">
+                              <strong>Ölçüt:</strong> 3 ardışık oturumda hedef doğruluk seviyesinin korunması.
+                            </div>
+                            <div class="mock-bep-teacher-warning">
+                              ⚠️ <span>Bu taslak <strong>öğretmen onayı gerektirir</strong>. Resmi BEP'e eklenmeden önce gözden geçirilmelidir.</span>
+                            </div>
+                            <div class="mock-bep-actions">
+                              <span class="mock-bep-action-primary">✓ Onayla ve BEP'e Ekle</span>
+                              <span class="mock-bep-action-secondary">↺ Yeniden</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /step 2 -->
+
+              </div><!-- /device-screen -->
+            </div><!-- /device-frame--browser -->
+
+            <div class="step-dots" aria-hidden="true">
+              <span class="step-dot is-active"></span>
+              <span class="step-dot"></span>
+              <span class="step-dot"></span>
+            </div>
+
+          </div><!-- /scroll-demo-device -->
+        </div><!-- /scroll-demo-layout -->
+      </div>
+    </div>
+  </div><!-- /#teacher-scroll-area -->
+
+
+  <!-- ── MÜDÜR / YÖNETİCİ PANELİ (statik) ── -->
+  <div class="container">
+    <div class="role-separator">
+      <div class="role-badge role-badge--director">
+        <div class="role-badge-dot"></div>
+        Müdür / Yönetici Paneli
+      </div>
+    </div>
+
+    <div class="director-static">
+
+      <!-- Text -->
+      <div class="director-static-text">
+        <p class="text-step-label">Okul Geneli Görünüm</p>
+        <h3>Okulunuzun Büyük Resmi</h3>
+        <p>Tek bir sınıfla sınırlı değil — tüm okulun ilerlemesini,
+           sınıflar arası karşılaştırmayı ve sistemin kendisinin ne kadar
+           güvenilir çalıştığını tek panelden izleyin.</p>
+      </div>
+
+      <!-- Browser device (static, no scroll) -->
+      <div class="director-static-device">
+        <div class="device-frame device-frame--browser" aria-hidden="true">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <div class="browser-dot browser-dot--red"></div>
+              <div class="browser-dot browser-dot--yellow"></div>
+              <div class="browser-dot browser-dot--green"></div>
+            </div>
+            <div class="browser-url">app.emotionlab.net/yonetici/okul-geneli</div>
+          </div>
+
+          <div class="device-screen">
+            <div class="mock-browser-layout" style="flex:1;">
+              <div class="mock-sidebar">
+                <div class="mock-sidebar-logo">🏫</div>
+                <div class="mock-sidebar-icon active">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                </div>
+                <div class="mock-sidebar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                </div>
+                <div class="mock-sidebar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                </div>
+              </div>
+              <div class="mock-browser-main">
+                <div class="mock-browser-topbar">
+                  <h4>Okul Geneli Genel Bakış</h4>
+                  <div class="mock-browser-user">
+                    <div class="mock-browser-avatar" style="background:#8B5CF6">M</div>
+                    Müdür Bey
+                  </div>
+                </div>
+                <div class="mock-browser-content">
+                  <div class="mock-director-stats">
+                    <div class="mock-stat-card highlight">
+                      <div class="mock-stat-card-value">142</div>
+                      <div class="mock-stat-card-label">Toplam öğrenci</div>
+                    </div>
+                    <div class="mock-stat-card">
+                      <div class="mock-stat-card-value">8</div>
+                      <div class="mock-stat-card-label">Sınıf</div>
+                    </div>
+                    <div class="mock-stat-card">
+                      <div class="mock-stat-card-value">12</div>
+                      <div class="mock-stat-card-label">Öğretmen</div>
+                    </div>
+                  </div>
+                  <div class="mock-class-comparison">
+                    <div class="mock-student-list-header">
+                      <span class="mock-student-list-title">Sınıf Karşılaştırması</span>
+                    </div>
+                    <div class="mock-class-row">
+                      <span class="mock-class-name">3A</span>
+                      <div class="mock-class-track"><div class="mock-class-fill" style="width:81%"></div></div>
+                      <span class="mock-class-pct">%81</span>
+                    </div>
+                    <div class="mock-class-row">
+                      <span class="mock-class-name">3B</span>
+                      <div class="mock-class-track"><div class="mock-class-fill" style="width:74%"></div></div>
+                      <span class="mock-class-pct">%74</span>
+                    </div>
+                    <div class="mock-class-row">
+                      <span class="mock-class-name">4A</span>
+                      <div class="mock-class-track"><div class="mock-class-fill" style="width:68%"></div></div>
+                      <span class="mock-class-pct">%68</span>
+                    </div>
+                    <div class="mock-class-row">
+                      <span class="mock-class-name">4B</span>
+                      <div class="mock-class-track"><div class="mock-class-fill" style="width:72%"></div></div>
+                      <span class="mock-class-pct">%72</span>
+                    </div>
+                  </div>
+                  <div class="mock-ai-status">
+                    <div>
+                      <div class="mock-ai-status-title">YZ Model Durumu</div>
+                      <div class="mock-ai-status-row">
+                        <div class="mock-ai-metric">
+                          <div class="mock-ai-metric-dot"></div>
+                          <span class="mock-ai-metric-text">Doğruluk: %89</span>
+                        </div>
+                        <div class="mock-ai-metric">
+                          <div class="mock-ai-metric-dot" style="background:#F59E0B"></div>
+                          <span class="mock-ai-metric-text">Son güncelleme: 2 hafta</span>
+                        </div>
+                      </div>
+                    </div>
+                    <span style="font-size:9px;color:#8A9BAD;">Tanı niteliği taşımaz</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /device-screen -->
+        </div><!-- /device-frame -->
+      </div><!-- /director-static-device -->
+
+    </div><!-- /director-static -->
+  </div><!-- /container -->
+
+  <div class="section-outro container">
+    <a href="#solutions" class="section-transition-link">
+      Çözümleri ve erişim bilgisini görün
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+
+</section><!-- /#browser-demo -->
+
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 05 — ÇÖZÜMLER (B2C / B2B)
+════════════════════════════════════════════════════════════════════════ -->
+<section class="section section--solutions" id="solutions">
+  <div class="container">
+
+    <div class="section-header">
+      <span class="section-label">Hizmet Modelimiz</span>
+      <h2>Size Uygun Çözüm</h2>
+      <p class="section-header-desc">EmotionLab, hem aileler hem de okullar için farklı şekillerde hizmet sunar.</p>
+    </div>
+
+    <div class="solutions-grid">
+
+      <!-- Kart 1: B2C — Aileler -->
+      <div class="solution-card solution-card--b2c">
+        <div class="solution-card-badge">B2C</div>
+        <div class="solution-card-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <h3>Aileler İçin</h3>
+        <p class="solution-card-subtitle">Bireysel kullanım için tasarlandı</p>
+        <ul class="solution-features">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Çocuk uygulaması (tablet)</strong> — oyunlaştırılmış öğrenme deneyimi</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Veli uygulaması (telefon)</strong> — ilerleme takibi, uzman görüşmesi, YZ desteği</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Uygun fiyatlı abonelik seçenekleri (aylık / yıllık)</span>
+          </li>
+        </ul>
+        <div class="solution-coming-soon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Uygulamalarımız geliştirme aşamasındadır. Play Store &amp; App Store'da <strong>yakında</strong> hizmetinizde!</span>
+        </div>
+        <a href="mailto:emotionlabbb@gmail.com?subject=Lansman Bildirimi" class="btn btn-secondary solution-cta">
+          Lansmanından Haberdar Ol
+        </a>
+      </div>
+
+      <!-- Kart 2: B2B — Okullar -->
+      <div class="solution-card solution-card--b2b">
+        <div class="solution-card-badge solution-card-badge--b2b">B2B</div>
+        <div class="solution-card-icon-wrap solution-card-icon-wrap--b2b">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Okullar ve Kurumlar İçin</h3>
+        <p class="solution-card-subtitle">Kurumsal çözüm, özel fiyatlandırma</p>
+        <ul class="solution-features">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Öğretmen paneli</strong> — sınıf yönetimi, BEP takibi, YZ destekli planlama</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Müdür / Yönetici paneli</strong> — okul geneli raporlama ve analiz</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Kurumunuza özel kurulum ve eğitim desteği</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Kurum büyüklüğünüze özel fiyatlandırma</span>
+          </li>
+        </ul>
+        <a href="mailto:emotionlabbb@gmail.com?subject=Kurumsal Çözümler Hakkında Bilgi" class="btn btn-primary solution-cta">
+          Kurumsal Çözümler İçin İletişime Geçin
+        </a>
+      </div>
+
+    </div><!-- /solutions-grid -->
+  </div><!-- /container -->
+</section><!-- /#solutions -->
+
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 06 — BİZ KİMİZ / HİKAYEMİZ
+════════════════════════════════════════════════════════════════════════ -->
+<section class="section section--about" id="about">
+  <div class="container">
+
+    <!-- Narrative -->
+    <div class="about-narrative-centered">
+      <span class="section-label">Hikayemiz</span>
+      <h2 class="about-title">Neden EmotionLab?</h2>
+      <div class="about-narrative-text">
+        <p>
+          EmotionLab, özel eğitime ihtiyaç duyan çocukların öğrenme yolculuğunu
+          desteklemek isteyen bir ekip tarafından kuruldu.
+        </p>
+        <p>
+          Amacımız, çocukların zaten geçirdiği ekran süresinin içine anlamlı ve
+          ölçülebilir bir öğrenme deneyimi sığdırmak. Her oyun, her aktivite;
+          gerçek özel eğitim yöntemleriyle — ABA, TEACCH gibi kanıta dayalı
+          yaklaşımlarla — uyumlu olacak şekilde uzmanlarımızla birlikte tasarlandı.
+        </p>
+        <p>
+          Bugün EmotionLab, ETKİM/YTÜ Teknopark bünyesinde gelişimini sürdürüyor.
+          Çocukların duygusal dünyasını anlamamıza yardımcı olan her veli, öğretmen
+          ve uzmanla birlikte büyümeye devam ediyoruz.
+        </p>
+      </div>
+    </div>
+
+    <!-- İlkelerimiz -->
+    <div class="principles-section">
+      <h2 class="principles-title">İlkelerimiz</h2>
+      <div class="principles-grid">
+
+        <div class="principle-card">
+          <div class="principle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="principle-title">Asla Tanı Koymayız</h3>
+          <p class="principle-desc">YZ çıktılarımız her zaman öneri niteliğindedir, klinik bir değerlendirme değildir.</p>
+        </div>
+
+        <div class="principle-card">
+          <div class="principle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3 class="principle-title">Suçlama Yok</h3>
+          <p class="principle-desc">Her yanlış cevap öğrenme fırsatıdır, asla başarısızlık değil.</p>
+        </div>
+
+        <div class="principle-card">
+          <div class="principle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
+          <h3 class="principle-title">Veri Gizliliği Önceliğimiz</h3>
+          <p class="principle-desc">Çocuk verileri en yüksek güvenlik standartlarıyla korunur.</p>
+        </div>
+
+        <div class="principle-card">
+          <div class="principle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3 class="principle-title">Uzman Onaylı İçerik</h3>
+          <p class="principle-desc">Her aktivite, özel eğitim uzmanlarıyla birlikte geliştirilir.</p>
+        </div>
+
+      </div>
+    </div><!-- /principles-section -->
+
+    <!-- Ekip -->
+    <div class="team-section">
+      <div class="team-grid-about">
+
+        <div class="team-card-about">
+          <div class="team-photo-wrapper">
+            <img src="images/aysenuryildirim.jpeg" alt="Ayşe Nur Yıldırım" class="team-photo" onerror="this.style.display='none'">
+          </div>
+          <div class="team-info">
+            <div class="team-name-about">Ayşe Nur Yıldırım</div>
+            <div class="team-role-about">Fen Bilimleri Öğretmeni — Eğitim Teknolojileri, İçerik Geliştirme ve Pazarlama</div>
+          </div>
+        </div>
+
+        <div class="team-card-about">
+          <div class="team-photo-wrapper">
+            <img src="images/nursimaakgul.jpeg" alt="Nur Sima Akgül" class="team-photo" onerror="this.style.display='none'">
+          </div>
+          <div class="team-info">
+            <div class="team-name-about">Nur Sima Akgül</div>
+            <div class="team-role-about">Bilgisayar Mühendisi — Yazılım ve Yapay Zeka Geliştirme</div>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /team-section -->
+
+  </div><!-- /container -->
+</section><!-- /#about -->
+
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 06 — FOOTER / SON CTA
+════════════════════════════════════════════════════════════════════════ -->
+<div id="footer-cta">
+
+  <!-- Son CTA bloğu -->
+  <div class="footer-cta-block">
+    <div class="container">
+      <div class="cta-box">
+        <h2>EmotionLab'i Yakından Tanımak İster misiniz?</h2>
+        <p>Okulunuz veya kurumunuz için bir demo planlayalım.</p>
+        <div class="cta-actions">
+          <a href="mailto:emotionlabbb@gmail.com" class="btn btn-primary btn-cta">Demo Talep Et</a>
+          <span class="cta-email-link">
+            Veya bize yazın:
+            <a href="mailto:emotionlabbb@gmail.com">emotionlabbb@gmail.com</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer grid -->
+  <footer class="footer-grid-section" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Sütun 1: Marka -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand-logo">
+            <img src="images/logo.png" alt="EmotionLab" class="logo-img logo-img--footer"
+                 onerror="this.style.display='none';document.getElementById('footerLogoFallback').style.display='flex'">
+            <span id="footerLogoFallback" class="logo-text-fallback logo-text-fallback--footer" aria-hidden="true">EmotionLab</span>
+          </div>
+          <p class="footer-slogan">Duygularımızı birlikte keşfedelim.</p>
+          <div class="social-icons">
+            <!-- LinkedIn -->
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <!-- Instagram -->
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <!-- Twitter/X -->
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Sütun 2: Ürün -->
+        <div class="footer-col">
+          <div class="footer-col-title">Ürün</div>
+          <nav class="footer-links" aria-label="Ürün linkleri">
+            <a href="#tablet-demo">Çocuk Uygulaması</a>
+            <a href="#phone-demo">Veli Uygulaması</a>
+            <a href="#browser-demo">Okullar İçin</a>
+          </nav>
+        </div>
+
+        <!-- Sütun 3: Şirket -->
+        <div class="footer-col">
+          <div class="footer-col-title">Şirket</div>
+          <nav class="footer-links" aria-label="Şirket linkleri">
+            <a href="#about">Hakkımızda</a>
+            <a href="mailto:emotionlabbb@gmail.com">İletişim</a>
+            <a href="#">Kariyer</a>
+          </nav>
+        </div>
+
+        <!-- Sütun 4: Yasal -->
+        <div class="footer-col">
+          <div class="footer-col-title">Yasal</div>
+          <nav class="footer-links" aria-label="Yasal linkler">
+            <a href="#">Gizlilik Politikası</a>
+            <a href="#">Kullanım Şartları</a>
+            <a href="#">KVKK Aydınlatma Metni</a>
+          </nav>
+        </div>
+
+      </div><!-- /footer-grid -->
+
+      <div class="footer-bottom">
+        <span class="footer-copy">
+          © <span id="copyright-year"></span> EmotionLab. Tüm hakları saklıdır.
+        </span>
+        <div class="footer-legal-links">
+          <a href="#">Gizlilik</a>
+          <a href="#">Şartlar</a>
+          <a href="#">KVKK</a>
+        </div>
+      </div>
+
+    </div><!-- /container -->
+  </footer>
+
+</div><!-- /#footer-cta -->
+
+<script src="js/script.js"></script>
+</body>
+</html>
